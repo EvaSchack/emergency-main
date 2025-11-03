@@ -34,11 +34,43 @@
     </header>
 
     <main>
-      <h1>hello</h1>
+      <h1>OFFICIEL INDBERETNINGSFORMULAR</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Udfyldes af borgere, der mistænker smitte, overdreven cykeltrang eller ufrivillig deltagelse i Tour de France.</h2>
+          <h3>PERSONLIGE OPLYSNINGER</h3>
+
+          <label for="first-name">Navn: <input type="text" id="first-name" name="first-name" /></label>
+
+          <label for="number">Alder: <input type="number" id="number" name="number" /></label>
+
+          <p>Køn:</p>
+          <label for="mand">
+            <input type="radio" id="mand" name="gender" value="mand" />
+            Mand
+          </label>
+
+          <label for="kvinde">
+            <input type="radio" id="kvinde" name="gender" value="kvinde" />
+            Kvinde
+          </label>
+
+          <label for="cyklist">
+            <input type="radio" id="cyklist" name="gender" value="cyklist" />
+            Cyklist
+          </label>
+
+          <label for="andet">
+            <input type="radio" id="andet" name="gender" value="andet" />
+            Andet
+          </label>
+
+          <label for="zipcode">Postnummer - for smittesporing af cykelruter: <input type="number" id="zipcode" name="zipcode" /></label>
+
+          <h3>SMITTESYMPTOMER</h3>
+          <label for="terms">Accept terms</label>
+
+          <input type="checkbox" id="terms" />
         </article>
         <form id="webform"></form>
       </section>
