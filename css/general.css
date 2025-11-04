@@ -26,7 +26,7 @@ header {
 
 main section {
   padding: 20px;
-  border-radius: var(--border-radius);
+  border-radius: 10px;
 }
 
 h1 {
@@ -42,7 +42,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: var(--color-head-bg);
+  background-color: #ea2127;
   font-size: var(--font-h2-size);
 }
 
@@ -67,12 +67,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -92,14 +92,14 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: #009345;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
@@ -118,7 +118,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
