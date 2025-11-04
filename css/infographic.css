@@ -7,14 +7,14 @@
   padding: 20px 0;
 }
 .info-graphic {
-  border-radius: 0;
+  border-radius: 10px;
   margin: 60px auto 80px auto;
 }
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: var(--color-headline-text-page);
+  color: #fceb94;
   margin-bottom: 1rem;
 }
 .info-text h3 {
