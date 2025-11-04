@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -38,80 +38,119 @@
       <section id="form-section">
         <article id="form-info">
           <h2>Udfyldes af borgere, der mistænker smitte, overdreven cykeltrang eller ufrivillig deltagelse i Tour de France.</h2>
-          <h3>PERSONLIGE OPLYSNINGER</h3>
-
-          <label for="first-name">Navn: <input type="text" id="first-name" name="first-name" /></label>
-
-          <label for="number">Alder: <input type="number" id="number" name="number" /></label>
-
-          <p>Køn:</p>
-          <label for="mand">
-            <input type="radio" id="mand" name="gender" value="mand" />
-            Mand
-          </label>
-
-          <label for="kvinde">
-            <input type="radio" id="kvinde" name="gender" value="kvinde" />
-            Kvinde
-          </label>
-
-          <label for="cyklist">
-            <input type="radio" id="cyklist" name="gender" value="cyklist" />
-            Cyklist
-          </label>
-
-          <label for="andet">
-            <input type="radio" id="andet" name="gender" value="andet" />
-            Andet
-          </label>
-
-          <label for="zipcode">Postnummer - for smittesporing af cykelruter: <input type="number" id="zipcode" name="zipcode" /></label>
-
-          <h3>SMITTESYMPTOMER</h3>
-          <p>Sæt kryds ved det, du har oplevet inden for de sidste 48 timer</p>
-          <label for="trang"><input type="checkbox" id="trang" /> Ufrivillig trang til at sige “jeg tager bare cyklen”</label>
-          <label for="cykelshorts"><input type="checkbox" id="cykelshorts" /> Spontan iførelse af cykelshorts i sociale sammenhænge</label>
-          <label for="cykelshorts"><input type="checkbox" id="klokke" /> Kraftig ringeklokke-refleks ved synet af fodgængere</label>
-          <label for="cykel"><input type="checkbox" id="cykel" /> Pludselig følelsesmæssig tilknytning til din cykel</label>
-          <label for="sove"><input type="checkbox" id="sove" /> Du hører kæderasle, selv når du sover</label>
-
-          <h3>HVILKEN TYPE CYKEL HAR DU?</h3>
-          <p>Dette bruges til at bestemme smittens variant</p>
           <form>
-            <label for="message"></label>
-            <textarea name="message" id="message"></textarea>
+            <div class="form-group">
+              <h3>PERSONLIGE OPLYSNINGER</h3>
+              <label for="first-name">Navn:</label>
+              <input type="text" id="first-name" name="first-name" aria-describedby="first name-error" required />
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <label for="number">Alder:</label>
+              <input type="number" id="number" name="number" aria-describedby="number-error" required />
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <p>Køn:</p>
+              <label for="mand">
+                <input type="radio" id="mand" name="gender" value="mand" />
+                Mand
+              </label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <label for="kvinde">
+                <input type="radio" id="kvinde" name="gender" value="kvinde" />
+                Kvinde
+              </label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <label for="cyklist">
+                <input type="radio" id="cyklist" name="gender" value="cyklist" />
+                Cyklist
+              </label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <label for="andet">
+                <input type="radio" id="andet" name="gender" value="andet" />
+                Andet
+              </label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <label for="zipcode">Postnummer - for smittesporing af cykelruter: <input type="number" id="zipcode" name="zipcode" aria-describedby="zipcode-error" required /></label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <h3>HVILKEN TYPE CYKEL HAR DU?</h3>
+              <p>Dette bruges til at bestemme smittens variant</p>
+              <form>
+                <label for="message"></label>
+                <textarea name="message" id="message"></textarea>
+              </form>
+            </div>
+
+            <div class="form-group">
+              <h3>SMITTESYMPTOMER</h3>
+              <p>Sæt kryds ved det, du har oplevet inden for de sidste 48 timer</p>
+              <label for="trang"><input type="checkbox" id="trang" /> Ufrivillig trang til at sige “jeg tager bare cyklen”</label>
+              <label for="cykelshorts"><input type="checkbox" id="cykelshorts" /> Spontan iførelse af cykelshorts i sociale sammenhænge</label>
+              <label for="cykelshorts"><input type="checkbox" id="klokke" /> Kraftig ringeklokke-refleks ved synet af fodgængere</label>
+              <label for="cykel"><input type="checkbox" id="cykel" /> Pludselig følelsesmæssig tilknytning til din cykel</label>
+              <label for="sove"><input type="checkbox" id="sove" /> Du hører kæderasle, selv når du sover</label>
+            </div>
+
+            <div class="form-group">
+              <h3>VIDERE HENVISNING</h3>
+              <p>Hvad ønsker du, myndighederne skal gøre?</p>
+
+              <label for="fjern">
+                <input type="radio" id="fjern" name="myndighed" value="fjern" />
+                Fjern min cykel, jeg er ikke stærk nok
+              </label>
+
+              <label for="hjul">
+                <input type="radio" id="hjul" name="myndighed" value="hjul" />
+                Send mig i karantæne på løbehjul
+              </label>
+              <label for="donere">
+                <input type="radio" id="donere" name="myndighed" value="donere" />
+                Jeg ønsker at donere min cykel til forskning
+              </label>
+
+              <label for="stat">
+                <input type="radio" id="stat" name="myndighed" value="stat" />
+                Jeg kræver statsstøtte til nye støttehjul
+              </label>
+
+              <label for="nej">
+                <input type="radio" id="nej" name="myndighed" value="nej" />
+                Nej tak, jeg cykler videre, smitten kan ikke stoppe mig
+              </label>
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <div class="form-group">
+              <h3>KONTAKT OPLYSNINGER</h3>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" aria-describedby="first name-error" required />
+
+              <label for="telefon">Telefon:</label>
+              <input type="tel" id="telefon" name="telefon" aria-describedby="first name-error" required />
+              <p class="error-message">Udfyld dette felt</p>
+            </div>
+
+            <button>Indsend</button>
           </form>
-
-          <h3>VIDERE HENVISNING</h3>
-          <p>Hvad ønsker du, myndighederne skal gøre?</p>
-          <label for="fjern">
-            <input type="radio" id="fjern" name="myndighed" value="fjern" />
-            Fjern min cykel, jeg er ikke stærk nok
-          </label>
-          <label for="hjul">
-            <input type="radio" id="hjul" name="myndighed" value="hjul" />
-            Send mig i karantæne på løbehjul
-          </label>
-          <label for="donere">
-            <input type="radio" id="donere" name="myndighed" value="donere" />
-            Jeg ønsker at donere min cykel til forskning
-          </label>
-          <label for="stat">
-            <input type="radio" id="stat" name="myndighed" value="stat" />
-            Jeg kræver statsstøtte til nye støttehjul
-          </label>
-          <label for="nej">
-            <input type="radio" id="nej" name="myndighed" value="nej" />
-            Nej tak, jeg cykler videre, smitten kan ikke stoppe mig
-          </label>
-
-          <h3>KONTAKT OPLYSNINGER</h3>
-          <label for="email">Email: <input type="email" id="email" name="email" /></label>
-          <label for="telefon">Telefon: <input type="tel" id="telefon" name="telefon" /></label>
-
-</br>
-
-          <button>Indsend</button>
         </article>
         <form id="webform"></form>
       </section>
