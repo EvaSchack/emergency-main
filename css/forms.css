@@ -108,3 +108,10 @@ button:active {
     display: block;
   }
 }
+
+.formular-kasse {
+  background-color: white;
+  padding: 40px;
+  margin-left: 50px;
+  gap: 10rem;
+}
