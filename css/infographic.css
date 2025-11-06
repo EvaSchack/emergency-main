@@ -43,6 +43,7 @@
 
 .my_scale {
   transform: scale(1.7);
+  transition: transform 2s;
   transform-box: fill-box;
   transform-origin: 50% 50%;
 }
