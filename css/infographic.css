@@ -14,9 +14,10 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: #fceb94;
+  color: #d1ec73;
   margin-bottom: 1rem;
 }
+
 .info-text h3 {
   font-size: 0.8rem;
   line-height: 0.8rem;
