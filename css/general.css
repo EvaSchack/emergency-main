@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: var(--color-head-bg);
+  background-color: #ea2127;
   display: flex;
   justify-content: flex-start;
   align-items: center;

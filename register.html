@@ -105,8 +105,8 @@
               <div class="form-group">
                 <h3>SMITTESYMPTOMER</h3>
                 <p>Sæt kryds ved det, du har oplevet inden for de sidste 48 timer</p>
-                <label for="trang"><input type="checkbox" id="trang" /> Ufrivillig trang til at sige “jeg tager bare cyklen”</label>
-                <label for="cykelshorts"><input type="checkbox" id="cykelshorts" /> Spontan iførelse af cykelshorts i sociale sammenhænge</label>
+                <label for="trang"><input type="checkbox" name="smitte" id="trang" /> Ufrivillig trang til at sige “jeg tager bare cyklen”</label>
+                <label for="cykelshorts"><input type="checkbox" name="smitte" id="cykelshorts" /> Spontan iførelse af cykelshorts i sociale sammenhænge</label>
                 <label for="cykelshorts"><input type="checkbox" id="klokke" /> Kraftig ringeklokke-refleks ved synet af fodgængere</label>
                 <label for="cykel"><input type="checkbox" id="cykel" /> Pludselig følelsesmæssig tilknytning til din cykel</label>
                 <label for="sove"><input type="checkbox" id="sove" /> Du hører kæderasle, selv når du sover</label>
@@ -117,26 +117,26 @@
                 <p>Hvad ønsker du, myndighederne skal gøre?</p>
 
                 <label for="fjern">
-                  <input type="radio" id="fjern" name="myndighed" value="fjern" />
+                  <input type="radio" id="fjern" name="myndighed" value="Fjern min cykel" />
                   Fjern min cykel, jeg er ikke stærk nok
                 </label>
 
                 <label for="hjul">
-                  <input type="radio" id="hjul" name="myndighed" value="hjul" />
+                  <input type="radio" id="hjul" name="myndighed" value="Karantæne på løbehjul" />
                   Send mig i karantæne på løbehjul
                 </label>
                 <label for="donere">
-                  <input type="radio" id="donere" name="myndighed" value="donere" />
+                  <input type="radio" id="donere" name="myndighed" value="Doner cykel til forskning" />
                   Jeg ønsker at donere min cykel til forskning
                 </label>
 
                 <label for="stat">
-                  <input type="radio" id="stat" name="myndighed" value="stat" />
+                  <input type="radio" id="stat" name="myndighed" value="Statsstøtte til støttehjul" />
                   Jeg kræver statsstøtte til nye støttehjul
                 </label>
 
                 <label for="nej">
-                  <input type="radio" id="nej" name="myndighed" value="nej" />
+                  <input type="radio" id="nej" name="myndighed" value="Nej tak" />
                   Nej tak, jeg cykler videre, smitten kan ikke stoppe mig
                 </label>
                 <p class="error-message">Udfyld dette felt</p>
@@ -150,7 +150,17 @@
                 <label for="telefon">Telefon:</label>
                 <input type="tel" id="telefon" name="telefon" aria-describedby="first name-error" required />
                 <p class="error-message">Udfyld dette felt</p>
+
                 <br />
+
+                <div class="form-group">
+                  <label for="accept_terms">
+                    <input type="checkbox" id="accept_terms" name="accept_terms" value="Ja" aria-describedby="terms-error" required />
+                    Acceptér vilkårene
+                  </label>
+                  <p class="error-message" id="terms-error">Udfyld dette felt</p>
+                </div>
+
                 <button>Indsend</button>
               </div>
             </section>
@@ -163,11 +173,15 @@
           <h3>OPSAMLING</h3>
           <br />
           <div>
-            <p>First name: <span id="first_name_output"></span></p>
-            <p>Last name: <span id="last_name_output"></span></p>
-            <p>Email: <span id="email_output"></span></p>
-            <p>Password: <span id="password_output"></span></p>
-            <p>Terms accepted: <span id="terms_output"></span></p>
+            <p>NAVN: <span id="first_name_output"></span></p>
+            <p>ALDER: <span id="number_output"></span></p>
+            <p>KØN: <span id="koen_output"></span></p>
+            <p>POSTNUMER: <span id="postnummer_output"></span></p>
+            <p>TYPE CYKEL: <span id="cykel_output"></span></p>
+            <p>HENVISNING: <span id="henvisning_output"></span></p>
+            <p>EMAIL: <span id="email_output"></span></p>
+            <p>TELEFON: <span id="telefon_output"></span></p>
+            <p>ACCEPTER VILKÅR: <span id="terms_output"></span></p>
           </div>
         </section>
       </section>
@@ -200,5 +214,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 }
 .info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
+  background-color: #f3f4ba;
   padding: 20px 0;
 }
 .info-graphic {
@@ -14,7 +14,7 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: #d1ec73;
+  color: #f3f4ba;
   margin-bottom: 1rem;
 }
 
@@ -36,10 +36,10 @@
 }
 .info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
-  background-color: var(--color-infobox-1-bg);
+  background-color: rgba(255, 0, 0, 0.209);
 }
 .info-box:nth-of-type(2n) {
-  background-color: var(--color-infobox-2-bg);
+  background-color: rgba(0, 128, 0, 0.171);
 }
 
 .my_scale {

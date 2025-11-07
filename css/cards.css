@@ -40,7 +40,7 @@
   height: minmax(300px, min-content);
 }
 .news_card:nth-child(2n) {
-  background-color: var(--color-news-bg-inverted);
+  background-color: #318986;
 }
 .news_card > * {
   padding: 0 1rem;
@@ -74,7 +74,7 @@
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: var(--color-cta-card-bg);
+  background-color: #ea2128;
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
@@ -84,7 +84,7 @@
   background-color: var(--color-cta-newscard-bg);
 }
 .news_card:nth-of-type(2n) .cta_btn {
-  background-color: var(--color-cta-newscard-bg-inverted);
+  background-color: #c1da69c0;
   color: var(--color-text);
 }
 .cta_btn:after {
