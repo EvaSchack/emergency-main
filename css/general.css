@@ -10,7 +10,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: var(--color-head-bg);
+  background-color: #ea2127;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -68,13 +68,13 @@ h3 {
 }
 
 main > h1 {
-  width: calc(80% - 6rem);
+  width: calc(108% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: var(--color-menu-bg);
+  background-color: black;
 }
 
 nav ul {
@@ -92,7 +92,7 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: #009345;
+  background-color: #000;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -110,7 +110,7 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: var(--color-link-bg);
+  background-color: #fffbd3;
   color: var(--color-text);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
