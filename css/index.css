@@ -1,0 +1,63 @@
+article [popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5rem;
+  justify-self: center;
+  background-color: #fffae2;
+  border: none;
+}
+#popup2,
+#popup1,
+#popup,
+#popover-text2,
+#popover-text1 {
+  margin-block: 1rem;
+  padding-inline-start: 1.25rem;
+}
+
+summary {
+  background: pink;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+summary::marker {
+  content: none;
+}
+
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
+}
+
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s allow-discrete;
+}
+
+[open]::details-content {
+  height: auto;
+}

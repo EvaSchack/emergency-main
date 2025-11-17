@@ -79,6 +79,8 @@
   text-decoration: none;
   width: max-content;
   border-radius: var(--border-radius);
+  cursor: pointer;
+  border: none;
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
@@ -90,4 +92,8 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+.daily_card button {
+  border: none;
 }
