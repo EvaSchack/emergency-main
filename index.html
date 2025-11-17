@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -127,44 +128,141 @@
           <div class="daily_text">
             <h2>Undgå at blive smittet</h2>
             <p>Her får du tre gode råd fra myndighederne til hvordan du undgår at blive smittet med cykelpesten.</p>
-            <a href="instruction.html" class="cta_btn">Se mere</a>
+            <details>
+              <summary href="" class="cta_btn">Læs mere</summary>
+
+              <h3>Stå aldrig på pedalerne!</h3>
+              <p>Det viser sig, at virussen “Cykelpest-23” ligger i dvale i alle metalpedaler, men vågner, når man stiller sig op og træder hårdt i dem.</p>
+
+              <h3>Tag støttehjul på!</h3>
+              <p>Ifølge cykelforskere fra Aalborg Universitet kan smitten ikke trænge igennem psykologisk umodenhed. Når man monterer støttehjul, sender man et signal til virussen om, at man stadig går i børnehave.</p>
+
+              <h3>Lad som om du allerede har vundet!</h3>
+              <p>Cykelpesten reagerer stærkt på følelsen af tab. Hvis du derimod konstant opfører dig som en vinder, mister virussen interessen.</p>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
           <img src="img/smittet.webp" alt="teaser_img" />
           <div class="daily_text">
             <h2>Overdreven cykeltrang?</h2>
-            <p>Udfyldes af borgere, der mistænker smitte, overdreven cykeltrang eller ufrivillig deltagelse i Tour de France.</p>
-            <a href="register.html" class="cta_btn">Se mere</a>
+            <p>Myndighederne har lavet en officiel indberetningsformular.</p>
+            <details>
+              <summary href="" class="cta_btn">Læs mere</summary>
+
+              <h3>Indberetningsformular</h3>
+              <p>Udfyldes af borgere, der mistænker smitte, overdreven cykeltrang eller ufrivillig deltagelse i Tour de France.</p>
+
+              <h3>Tag støttehjul på!</h3>
+              <p>Ifølge cykelforskere fra Aalborg Universitet kan smitten ikke trænge igennem psykologisk umodenhed. Når man monterer støttehjul, sender man et signal til virussen om, at man stadig går i børnehave.</p>
+
+              <h3>Lad som om du allerede har vundet!</h3>
+              <p>Cykelpesten reagerer stærkt på følelsen af tab. Hvis du derimod konstant opfører dig som en vinder, mister virussen interessen.</p>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
           <img src="img/trætkvinde.webp" alt="teaser_img" />
           <div class="daily_text">
             <h2>"Traumatiserende"</h2>
-            <p>Kom helt tæt på den første smittede i danmark, hør hendes historie og hvordan hun nu er kommet videre i livet.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <div class="content">
+              <p>Kom helt tæt på den første smittede i danmark, hør hendes historie og hvordan hun nu er kommet videre i livet.</p>
+            </div>
+            <details>
+              <summary href="" class="cta_btn">Læs mere</summary>
+              <h3>Interview med en overlevende: “Sådan blev jeg rask igen”</h3>
+              <br />
+              <p><strong>Reporter:</strong> Du var en af de første, der overlevede et direkte angreb fra Cykelpesten. Hvordan begyndte det?</p>
+              <p>
+                <strong>Overlevende:</strong> Jeg mærkede noget var galt, da jeg pludselig følte en ustoppelig trang til at pudse min kæde. Jeg ejer ikke engang en cykel. Så begyndte jeg spontant at stå op i pedalerne… på min kontorstol. Det var dér,
+                jeg vidste: Nu er den gal.
+              </p>
+              <p><strong>Reporter:</strong> Hvad var dit vendepunkt?</p>
+              <p><strong>Overlevende:</strong> Det var, da jeg fik støttehjul installeret på mine sko. Jeg kunne ikke gå normalt, men virussen troede, jeg var et barn, og mistede straks interessen. Jeg følte mig fri! Og fjollet. Mest fjollet.</p>
+
+              <p><strong>Reporter:</strong> Hvordan foregik helbredelsen?</p>
+              <p><strong>Overlevende:</strong> Det var hårdt. Lægerne satte mig i et rum uden cykler, uden Tour de France, uden lycra. Bare almindelige bukser. Det var traumatiserende i starten. Jeg savnede polstringen.</p>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
-          <h3>GLOBALT SHORTAGE PÅ STØTTEHJUL</h3>
+          <h3>Globalt shortage på støttehjul</h3>
           <p>På DBA, Gul&Gratis og mørke hjørner af Facebook Marketplace er priserne på støttehjul eksploderet.</p>
           <img src="img/mænd.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup" class="cta_btn">Læs mere</button>
+          <div popover id="popup">
+            <h3>Globalt shortage på støttehjul</h3>
+
+            <p>På DBA, Gul&Gratis og mørke hjørner af Facebook Marketplace er priserne på støttehjul eksploderet.</p>
+
+            <h3>Verden vågnede tirsdag morgen til en chokerende udmelding fra Den Internationale Cykelpestkommission:</h3>
+            <p>
+              Der er officielt globalt udsolgt af støttehjul. Situationens alvor kunne mærkes i gaderne allerede fra daggry, hvor voksne borgere stod i kø foran cykelhandlere iført pyjamas, slippers og panikblikke, desperate efter at sikre sig det,
+              som ifølge eksperterne er den mest effektive måde at narre Cykelpesten på.
+            </p>
+
+            <h3>Fra sjov til global krise på 48 timer Støttehjul</h3>
+            <p>
+              var engang en sentimental accessory for børn i alderen 3–6 år. Nu er de blevet en livsvigtig del af beredskabet, og efterspørgslen er steget med så voldsom kraft, at markederne kollapsede hurtigere end når nogen siger “bakkeinterval”.
+            </p>
+            <p>
+              <strong>En anonym kilde i Cykelministeriet fortæller:</strong> “Vi havde ét sæt på lager tirsdag morgen. ÉT. Og det blev slidt op ved synet af køen udenfor.” På sociale medier går videoer viralt af voksne mænd i jakkesæt, der kører
+              rundt på børnecykler i håb om at overleve endnu en dag. Flere medier rapporterer, at voksne har forsøgt at skrue Ikea-hjul fast på deres sneakers som improviseret alternativ.
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Cykelpestens påvirkning af samfundet</h3>
           <p>Derfor sælger alle butikker energy-gel og lycra.</p>
           <img src="img/reklamer.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup1" class="cta_btn" href="">Læs mere</button>
+          <div popover id="popup1">
+            <h3>Derfor sælger alle butikker energy-gel og lycra.</h3>
+            <p>
+              Siden Cykelpesten ramte landet, har detailhandlen gennemgået en transformation, der får finansfolk til at tabe cykelkæden. Supermarkederne har droppet traditionelle hylder med kolonialvarer og erstattet dem med 24 meter lange sektioner
+              dedikeret til energy-gel i “Smag af Banesving”, “Træthedens Triumph” og “Koffein-Chaos”.
+            </p>
+            <p>
+              <strong>Ifølge Den Nationale Cykeløkonomiske Styrelse</strong> har efterspørgslen på lycra steget med 11.000 % siden pandemiens begyndelse. Det vurderes, at 3 ud af 4 borgere nu går på arbejde iført tætsiddende, fluorescerende
+              cykeldragter – selv hvis de ikke ejer en cykel. Modeeksperter advarer om, at det menneskelige øje ikke er designet til at se så meget neongul på én gang. Den gennemsnitlige arbejdsplads oplever dagligt to kollaps på grund af
+              refleksforblænding, når solen rammer kollegaens bukser i en akavet vinkel.
+            </p>
+            <p>
+              <strong>Butikkerne har tilpasset sig med lynhastighed:</strong> Der er nu “gel-on-the-go”-automater i fitnesscentre, på busstoppesteder og i børnehaver. Nogle steder udleveres gel gratis, hvis man kan bevise, at man har cyklet mere end
+              ét kvarters ophold i kø. Eksperter frygter, at hvis udviklingen fortsætter, vil almindelige fødevarer som havregryn, rugbrød og kartofler helt forsvinde fra markedet, og blive erstattet af cykel-doping-lookalike produkter med navne som
+              “Turbopulver” og “Pedal Power Mix”.
+            </p>
+          </div>
         </article>
         <article class="news_card">
           <h3>Sortliste: De mest smittede cykeltyper lige nu”</h3>
           <p>Myndighederne har udsendt en officiel sortliste over cykeltyper, der anses for at være særligt smittefarlige i den aktuelle epidemi.</p>
           <img src="img/cykelbunke.webp" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <button popovertarget="popup2" class="cta_btn" href="">Læs mere</button>
+          <div popover id="popup2">
+            <h3>Sortliste: De mest smittede cykeltyper lige nu”</h3>
+            <p>Myndighederne har udsendt en officiel sortliste over cykeltyper, der anses for at være særligt smittefarlige i den aktuelle epidemi.</p>
+
+            <h3>1. Racercykler “Smitteklasse A+”</h3>
+            <p>
+              Skarpe, hurtige og konstant i overhalingsbane. Racercykler udsender aerodynamiske smittebølger, når de passerer med hastigheder over 27 km/t. Symptomer ses typisk hos ejere, der nægter at smile og stadig siger “jeg kører bare roligt
+              tempo”.
+            </p>
+
+            <h3>2. Mountainbikes “Offroad Risiko”</h3>
+            <p>Mountainbikes spreder smitten på ujævne overflader, især i skove, hvor mudderpartikler kan bære virus i op til 48 minutter. Der er rapporteret om smitte via hjulspor, som folk troede var fra rådyr.</p>
+
+            <h3>3. Elcykler “Batteribåren Infektionsfare”</h3>
+            <p>Virussen aktiveres, når batteriet overstiger 18% kapacitet. Særligt problematisk i byområder, hvor elcyklerne ligger som en elektrisk hær, klar til at accelerere uden advarsel.</p>
+
+            <h3>4. Tandemcykler “Dobbelt Risiko”</h3>
+            <p>Smitter dobbelt så hurtigt. Særligt farlige hvis rytterne ikke kan lide hinanden; negativ energi synes at intensivere viral output.</p>
+          </div>
         </article>
       </section>
     </main>
