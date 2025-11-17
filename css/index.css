@@ -49,7 +49,7 @@ summary::after {
 }
 
 [open] summary::after {
-  content: "–";
+  content: "\2193";
 }
 
 ::details-content {

@@ -1,5 +1,5 @@
 .daily_card {
-  background-color: #fffae2;
+  background-color: var(--color-news-bg);
   display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 10px;
@@ -92,6 +92,7 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+  transition: all 1s ease-out;
 }
 
 .daily_card button {

@@ -3,7 +3,7 @@
 }
 .info-graphic,
 .info-text {
-  background-color: #f3f4ba;
+  background-color: var(--color-bg-output);
   padding: 20px 0;
 }
 .info-graphic {
@@ -14,7 +14,7 @@
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
-  color: #f3f4ba;
+  color: var(--color-text-inverted);
   margin-bottom: 1rem;
 }
 

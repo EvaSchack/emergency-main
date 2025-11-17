@@ -112,7 +112,7 @@ button:active {
 }
 
 .formular-kasse {
-  background-color: #fffbd3;
+  background-color: var(--color-bg-output);
   padding: 1rlh;
 
   gap: 2rlh;
@@ -121,12 +121,12 @@ button:active {
 }
 
 .output {
-  background-color: #fffbd3;
+  background-color: var(--color-bg-output);
   padding: 1rlh;
   margin-left: 50px;
   gap: 2rlh;
   line-height: 2rem;
-  margin-top: 162px;
+  margin-top: 75px;
 }
 .fullwidth-heading {
   margin-bottom: 30px;

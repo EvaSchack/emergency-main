@@ -2,6 +2,12 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 header {
@@ -10,7 +16,7 @@ header {
 
 #main-disclamer {
   height: 225px;
-  background-color: #ea2127;
+  background-color: var(--color-bg-main-disclaimer);
   display: flex;
   justify-content: flex-start;
   align-items: center;
