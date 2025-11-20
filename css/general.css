@@ -23,6 +23,8 @@ header {
   padding-left: 2rem;
   padding-bottom: 2%;
   margin-bottom: var(--margin-head-bottom);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #main-disclamer-content {
@@ -48,7 +50,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: #ea2127;
+  background-color: var(--color-bg-main-disclaimer);
   font-size: var(--font-h2-size);
 }
 
@@ -116,11 +118,28 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: #fffbd3;
+  background-color: var(--color-bg-header-buttons);
   color: var(--color-text);
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
+}
+
+#toggle {
+  background-color: var(--color-bg-header-buttons);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+#toggle:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-out;
+  background-color: var(--color-bg-header-buttons);
 }
 
 /* Pilen efter menu-tekst */
@@ -140,4 +159,14 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+footer {
+  padding-bottom: 50px;
+  background-color: var(--color-news-bg);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }

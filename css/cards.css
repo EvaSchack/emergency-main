@@ -74,7 +74,7 @@
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: #ea2128;
+  background-color: var(--color-bg-main-disclaimer);
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
