@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --color-bg: light-dark(#d1ec73, rgb(0, 0, 0)); /* page background */
+  --color-bg: light-dark(#d1ec73, rgb(26, 30, 23)); /* page background */
 
   /* Header */
   --color-head-bg: #ff4b00;
@@ -73,7 +73,10 @@
   --color-bg-output: light-dark(#fffbd3, #777153);
 
   /* disclaimer */
-  --color-bg-main-disclaimer: light-dark(#ea2127, #ea2127);
+  --color-bg-main-disclaimer: light-dark(#ea2127, #96090e);
+
+  /* buttons */
+  --color-bg-header-buttons: light-dark(#fffbd3, #318986);
 }
 
 /* ----------------------------------------
